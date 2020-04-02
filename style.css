@@ -12,29 +12,41 @@ html, body{
 }
 
 header{
-    background-color: aqua;
+    background: rgb(22,73,161);
+    background: linear-gradient(140deg, rgba(22,73,161,1) 0%, rgba(55,135,175,1) 48%, rgba(148,237,255,1) 100%);
     flex-direction: row;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgba(2, 122, 2);
 }
 .menu{
     font-size: 1.5em;
     margin: 5px 10px 5px 10px;
-    background-color: rgb(0, 246, 123);
     border-radius: 5px;
-    background-color: aqua;
-    box-shadow: 1px 1px 10px aqua;
+    background-color: rgb(245, 245, 245, 0.5);
+    box-shadow: none;
     flex-grow: 1;
     flex-basis: 200px;
     align-self: center;
+    align-items: center;
+    transition-property: box-shadow, backgroung-color;
+    transition: 0.3s;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    text-align: center;
+    
 }
+.menu:hover {
+    background-color: whitesmoke;
+    box-shadow: 1px 1spx 25px white;
+}
+
 .el {
     flex-grow: 1;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: black;
+    font-family: 'Comic Neue', cursive;
 }
 footer{
     color: white;
