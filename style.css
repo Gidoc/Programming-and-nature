@@ -8,12 +8,12 @@ html, body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    background: rgb(22,73,161);
+    background: linear-gradient(140deg, rgba(22,73,161,1) 0%, rgba(55,135,175,1) 48%, rgba(148,237,255,1) 100%);
 }
 
 header{
-    background: rgb(22,73,161);
-    background: linear-gradient(140deg, rgba(22,73,161,1) 0%, rgba(55,135,175,1) 48%, rgba(148,237,255,1) 100%);
+    background-color: rgb(255, 255, 255, 0.1);
     flex-direction: row;
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@ header{
     font-size: 1.5em;
     margin: 5px 10px 5px 10px;
     border-radius: 5px;
-    background-color: rgb(245, 245, 245, 0.5);
+    background-color: rgb(245, 245, 245, 0);
     box-shadow: none;
     flex-grow: 1;
     flex-basis: 200px;
@@ -31,36 +31,86 @@ header{
     align-items: center;
     transition-property: box-shadow, backgroung-color;
     transition: 0.3s;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Gotu', sans-serif;
     font-weight: 700;
     text-align: center;
     
 }
 .menu:hover {
     background-color: whitesmoke;
-    box-shadow: 1px 1spx 25px white;
+    box-shadow: 1px 1px 5px 5px white;
 }
-
+#wifi {
+    margin-left: 30%;
+}
+#petition {
+    margin-right: 5%;
+}
+#logo {
+    flex-grow: 0.1 !important;
+    position: relative;
+    background-color: white !important;
+    box-shadow: none !important;
+    border-radius: 100px;
+    margin-left: 2%;
+    width: 2.7%;
+    height: 100%;
+}
+#logo:hover {
+    background-color: white !important;
+    box-shadow: none !important;
+}
+#logoimg {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+#logodiv {
+    background-color: none !important;
+    box-shadow: none !important;
+}
 .el {
     flex-grow: 1;
     text-align: center;
     text-decoration: none;
     color: black;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Gotu', sans-serif;
 }
 footer{
     color: white;
     text-align: center;
-    background-color: rgba(2, 122, 2);
+    background-image: url(images/grass\ texture3.png);
+    padding-bottom: 6%;
+    position: relative;
+}
+#footertext {
+    margin-top: 4%;
+    margin-left: 40%;
+    width: 20%;
+    position: absolute;
+    text-align: center;
 }
 
 
 
 
 
-@media(max-width: 500px){
+@media(max-width: 540px){
     #menu{
         display: block;
     }
-    
+    #logo {
+        width: 0px;
+        height: 0px;
+    }
+    #wifi {
+        margin-left: 0%;
+    }
+    #petition {
+        margin-right: 0%;
+    }
 }
