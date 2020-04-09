@@ -102,6 +102,41 @@ footer{
 main{
     z-index: 0; 
 }
+#firstslab {
+    background-color: rgb(245, 245, 245, 0.7);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+#firstimg {
+    background-image: url(images/Парк_Жилибера_1.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    width: 45%;
+    height: 350px;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.first {
+    flex-basis: auto;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+#firstblock {
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 45%;
+    height: 350px;
+    text-align: justify !important;
+}
+#firstblock>h2 {
+    text-align: center;
+}
 @media(max-width: 540px){
     #menu{
         display: block;
