@@ -18,10 +18,10 @@ header{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;    /*для выравнивания по центру по вертикали*/
 }
 .menu{
     font-size: 1.5em;
-    margin: 5px 10px 5px 10px;
     border-radius: 5px;
     background-color: rgb(245, 245, 245, 0);
     box-shadow: none;
@@ -34,7 +34,6 @@ header{
     font-family: 'Gotu', sans-serif;
     font-weight: 700;
     text-align: center;
-    
 }
 .menu:hover {
     background-color: whitesmoke;
@@ -53,25 +52,24 @@ header{
     box-shadow: none !important;
     border-radius: 100px;
     margin-left: 2%;
-    width: 2.7%;
-    height: 100%;
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;   /*иногда лучше указать в пикселях*/
 }
 #logo:hover {
     background-color: white !important;
     box-shadow: none !important;
 }
 #logoimg {
-    position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  margin-top: 10%;
-  margin-left: 10%;
+    margin: 0 !important;
+    max-width: 100%;
+    max-height: 50px;
 }
 #logodiv {
     background-color: none !important;
     box-shadow: none !important;
+    display: flex;
+    flex-direction: column;
 }
 .el {
     flex-grow: 1;
@@ -84,18 +82,25 @@ footer{
     color: white;
     text-align: center;
     background-image: url(images/grass\ texture3.png);
-    padding-bottom: 6%;
-    position: relative;
+    height: 70px;
+    min-height: 70px;
+
 }
 #footertext {
-    margin-top: 4%;
+    margin-top: 50px;
     margin-left: 40%;
     width: 20%;
-    position: absolute;
     text-align: center;
 }
 
-
+main{
+    z-index: 0; 
+}
+#cloud{
+    position: absolute; /*вот для облачка можно сделать абсолюную пацицию, что бы оно могло быть на заднем плане. Можено даже его двигать через JS*/
+    margin-top: -10%;   /*просто для демонтрации (может быть за текстом)*/
+    z-index: -1;    
+}
 
 
 
@@ -104,8 +109,7 @@ footer{
         display: block;
     }
     #logo {
-        width: 0px;
-        height: 0px;
+        display: none;  /*можно просто убрать, когда маленький экран*/
     }
     #wifi {
         margin-left: 0%;
