@@ -4,7 +4,6 @@
 }
 html, body{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,12 +141,13 @@ main{
 }
 .second {
     background-color: rgb(255, 255, 255);
-    max-width: 500px;
-    min-width: 350px;
+    max-width: 50%;
+    min-width: 40%;
     min-height: 350px;
     flex-basis: 40%;
     align-self: center;
     border-radius: 50px;
+    align-items: center;
 }
 #secondslab {
     display: flex;
@@ -168,7 +168,8 @@ main{
 }
 #spanan {
     display		: table-cell;
-	vertical-align	: middle;
+    vertical-align	: middle;
+    
 }
 #wifi_img {
     margin-right: 5%;
@@ -176,6 +177,8 @@ main{
     text-align: center;
     align-items: center;
     max-height: 300px !important;
+    display		: table-cell;
+    vertical-align	: middle;
 }
 #secondimg {
     background-image: url('images/wifi\ \(1\).png');
