@@ -183,16 +183,64 @@ main{
 #secondimg {
     background-image: url('images/wifi\ \(1\).png');
     max-width: 450px;
-    min-height: 300px;
+    min-height: 70vh;
     padding-bottom: 11px;
-    margin-top: 25px;
+    margin-top: 2%;
     margin-left: 7%;
     margin-right: 7%;
-    margin-bottom: 25px;
+    margin-bottom: 2%;
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
     align-items: center;
+}
+#thirdslab {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 5%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5vh;
+    user-select: none;
+}
+.list {
+    text-align: start;
+    margin-left: 3vw;
+}
+.listel:hover {
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+#listhid1 {
+    display: none;
+}
+#listhid2 {
+    display: none;
+}
+#listhid3 {
+    display: none;
+}
+#listhid4 {
+    display: none;
+}
+#listhid5 {
+    display: none;
+}
+.hidl {
+    text-align: start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 3vw;
+    font-size: 3vh;
+}
+#thirdslab>ul {
+    margin-top: 2%;
+    list-style: none;
 }
 @media(max-width: 540px){
     #menu{

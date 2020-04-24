@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Programming and nature</title>
   <link rel="stylesheet" href="style.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
@@ -60,10 +60,57 @@
       <div class="second" id="wifi_img"><div id="secondimg">&nbsp;</div></div>
       <div class="second" id="wifi_text"><span id="spanan">Одним из способов увеличить трафик населения в парках является <strong>Wi-Fi</strong></span></div>
     </div>
+  <div id="thirdslab">
+    <div class="thirdtext">
+      <b>Так же важно защищать природу, и вот что мы можем сделать для этого:</b>
+    </div>
+    <ul>
+      <hr>
+      <li class="listel">
+        <div class="list" onmousedown="viewDiv('listhid1')">Не разбрасывать мусор на природе</div>
+        <div class="hidl" id="listhid1" onmousedown="viewDiv('listhid1')">Важно убирать за собой весь мусор, и особенно пластик и стекло. По возможности следует прибрать и чужой мусор, если его кто-то оставил до вас.</div>
+      </li>
+      <hr>
+      <li class="listel">
+        <div class="list" onmousedown="viewDiv('listhid2')">Не слушать громко музыку</div>
+        <div class="hidl" id="listhid2" onmousedown="viewDiv('listhid2')">Не только в лесу, на поляне, за городом, но и в парках и скверах тоже, ведь вы можете мешать как животным, так и другим отдыхающим. Да и вообще лучше не слушать громко музыку.</div>
+      </li>
+      <hr>
+      <li class="listel">
+        <div class="list" onmousedown="viewDiv('listhid3')">Внимательно следить за огнём</div>
+        <div class="hidl" id="listhid3" onmousedown="viewDiv('listhid3')">Уже известно много случаев когда из-за халатности тех, кто разводит костёр или жарит <b>"шашлычок"</b> происходили огромные пожары. Так что <b>ПОЖАЛУЙСТА ВНИМАТЕЛЬНО</b> следите за огнём.</div>
+      </li>
+      <hr>
+      <li class="listel">
+        <div class="list" onmousedown="viewDiv('listhid4')">Поменьше пользоваться личным транспортом</div>
+        <div class="hidl" id="listhid4" onmousedown="viewDiv('listhid4')">Лучше лишний раз прогуляться или проехаться на велосипеде. Так и полезнее будет не только для природы, но и для вас. А если всё же хочется поехать и лень идти пешком - воспользуйтесь <b>общественным</b> транспортом.</div>
+      </li>
+      <hr>
+      <li class="listel">
+        <div class="list" onmousedown="viewDiv('listhid5')">Не делайте больно природе</div>
+        <div class="hidl" id="listhid5" onmousedown="viewDiv('listhid5')">Не рвите цветы, не ломайте ветки деревьям, не берите для костра живые части деревьев. Просто не вредите природе, иначе она навредит вам :3</div>
+      </li>
+      <hr>
+    </ul>
+  </div>
+    
   </main>
   <footer>
     <div id="footertext">2020 Саламов Имран (C)</div>
   </footer>
 </body>
-
+<script>
+  let b = 0
+  function viewDiv(block){
+    b++
+    if(b==1){
+      document.getElementById(block).style.display = "block";
+      }
+  
+    if(b>1) {
+      b=0;
+      document.getElementById(block).style.display = "none";
+    }
+}
+</script>
 </html>
