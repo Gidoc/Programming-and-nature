@@ -18,10 +18,10 @@
 
 <body>
   <header>
-    <a href="" id="logo" class="el">
+    <a href="index.html" id="logo" class="el">
       <div id="logodiv" class="menu"><img id="logoimg" src="images/leaf.png" alt=""></div>
     </a>
-    <a href="" id="wifi" class="el">
+    <a href="wifi.html" id="wifi" class="el">
       <div class="menu">Wi-Fi</div>
     </a>
     <a href="" class="el">
@@ -58,7 +58,7 @@
     </div>
     <div id="secondslab">
       <div class="second" id="wifi_img"><div id="secondimg">&nbsp;</div></div>
-      <div class="second" id="wifi_text"><span id="spanan">Одним из способов увеличить трафик населения в парках является <strong>Wi-Fi</strong></span></div>
+      <div class="second" onclick="alert()" id="wifi_text"><span id="spanan">Одним из способов увеличить трафик населения в парках является <strong>Wi-Fi</strong></span></div>
     </div>
   <div id="thirdslab">
     <div class="thirdtext">
@@ -112,5 +112,14 @@
       document.getElementById(block).style.display = "none";
     }
 }
+</script>
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script>
+  function alert() {
+    Swal.fire('Увеличение кол-ва точек доступа WIFI соответственно увеличит кол-во посетителей более молодёжного возраста, и сделает такие места скоплением разных компаний друзей. Если же в целом взглянуть на нюансы увеличения кол-ва WIFI точек, то там очень большое кол-во положительных сторон. Почитать подробнее вы можете перейдя по верхней панели сайта на раздел WI-FI.')
+  }
 </script>
 </html>

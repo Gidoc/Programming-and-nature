@@ -140,7 +140,6 @@ main{
     text-align: center;
 }
 .second {
-    background-color: rgb(255, 255, 255);
     max-width: 50%;
     min-width: 40%;
     min-height: 350px;
@@ -157,6 +156,7 @@ main{
     flex-direction: row-reverse;
 }
 #wifi_text {
+    background-color: rgb(255, 255, 255);
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 15%;
@@ -165,6 +165,11 @@ main{
     font-family: 'Roboto Slab', serif;
     font-size: 6vh;
     display		: table;
+    transition: 1s;
+    cursor: pointer;
+}
+#wifi_text:hover {
+    background-color: rgb(185, 185, 185);
 }
 #spanan {
     display		: table-cell;
@@ -172,6 +177,7 @@ main{
     
 }
 #wifi_img {
+    background-color: rgb(255, 255, 255);
     margin-right: 5%;
     margin-left: 5%;
     text-align: center;
@@ -212,8 +218,13 @@ main{
     text-align: start;
     margin-left: 3vw;
 }
+.listel {
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+}
 .listel:hover {
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(185, 185, 185);
     cursor: pointer;
 }
 #listhid1 {
@@ -241,6 +252,28 @@ main{
 #thirdslab>ul {
     margin-top: 2%;
     list-style: none;
+}
+#prowt {
+    float: left;
+    margin-left: 3vw;
+    font-family: 'Roboto Slab', serif;
+
+    max-width: 50vw;
+}
+#prowi {
+    float: right;
+    background-image: url("images/001_Wi-Fi_universal_nogo_naznacheniya.jpg");
+    min-width: 43vw;
+    min-height: 800px;
+    margin-right: 2vw;
+    border-radius: 30px;
+}
+#prowc {
+    margin-top: 3em;
+    background-color: rgb(245, 245, 245, 0.7);
+    padding-top: 10vh;
+    padding-bottom: 67%;
+    margin-bottom: 3em;
 }
 @media(max-width: 540px){
     #menu{
