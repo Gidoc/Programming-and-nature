@@ -275,6 +275,72 @@ main{
     padding-bottom: 67%;
     margin-bottom: 3em;
 }
+#peticii {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 7vh;
+    min-width: 100%;
+    background-color: rgb(245, 245, 245, 0.7);
+    text-align: center;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+#petparent {
+    display: flex;
+    margin-top: 5vh;
+}
+.pet {
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245, 0);
+    box-shadow: none;
+    flex-grow: 1;
+    flex-basis: 200px;
+    align-self: center;
+    align-items: center;
+    transition-property: box-shadow, backgroung-color;
+    transition: 0.3s;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-align: center;
+}
+.pet:hover {
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 5px 5px white;
+    cursor: pointer;
+}
+#new {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 7vh;
+    min-width: 100%;
+    background-color: rgb(245, 245, 245, 0.7);
+    text-align: center;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+#newsparent {
+    display: flex;
+    margin-top: 5vh;
+}
+.news {
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245, 0);
+    box-shadow: none;
+    flex-grow: 1;
+    flex-basis: 200px;
+    align-self: center;
+    align-items: center;
+    transition-property: box-shadow, backgroung-color;
+    transition: 0.3s;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-align: center;
+}
+.news:hover {
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 5px 5px white;
+    cursor: pointer;
+}
 @media(max-width: 540px){
     #menu{
         display: block;
