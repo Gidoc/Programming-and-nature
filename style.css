@@ -10,7 +10,6 @@ html, body{
     background: rgb(22,73,161);
     background: linear-gradient(140deg, rgba(22,73,161,1) 0%, rgba(55,135,175,1) 48%, rgba(148,237,255,1) 100%);
 }
-
 header{
     background-color: rgb(255, 255, 255, 0.1);
     flex-direction: row;
@@ -132,7 +131,7 @@ main{
     margin-left: 3%;
     margin-right: 3%;
     width: 45%;
-    height: 350px;
+    height: auto;
     text-align: justify !important;
     font-size: 2.5vh;
 }
@@ -324,7 +323,6 @@ main{
 .news {
     font-size: 1.5em;
     border-radius: 5px;
-    background-color: rgb(245, 245, 245, 0);
     box-shadow: none;
     flex-grow: 1;
     flex-basis: 200px;
@@ -340,6 +338,105 @@ main{
     background-color: whitesmoke;
     box-shadow: 1px 1px 5px 5px white;
     cursor: pointer;
+}
+:root {
+    --height-text: 50vh;
+}
+/*#backtext {
+    background-image: url("images/1.jpg");
+    animation: psycho 1s infinite;
+    background-size: contain;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.7);
+    min-height: var(--height-text);
+}
+#backchild {
+    backdrop-filter: blur(2px);
+    width: 100%;
+    min-height: var(--height-text);
+}
+Опять же я не знаю зачем я это делал, поэтому пусть лежит в комментариях.
+*/
+#confir {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: rgb(245, 245, 245, 0.7);
+    padding-bottom: 10vh;
+}
+#contex {
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    text-align: center;
+}
+#vibros {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+}
+#vibros:hover {
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 5px 5px white;
+    cursor: pointer;
+}
+#chisimg {
+    background-image: url("images/chigor.png");
+    animation: psycho 60s infinite;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 42vh;
+}
+#mustex {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 5%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5vh;
+    user-select: none;
+    transition: 3s;
+}
+#mustex:hover {
+    background-image: url("images/1.jpg");
+    animation: psycho 1s infinite;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.7);
+    min-height: var(--height-text);
+    color: white;
+    cursor: pointer;
+}
+#infograf {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("images/article2_img1.png");
+    height: 60vh;
+    margin-left: 35vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+#itog {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: rgb(245, 245, 245, 0.7);
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+@keyframes psycho {
+    0% {filter: hue-rotate(0deg);}
+    50% {filter: hue-rotate(360deg)}
+    100% {filter: hue-rotate(0deg);}
 }
 @media(max-width: 540px){
     #menu{

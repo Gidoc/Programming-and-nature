@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming and nature</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" id="logo" class="el">
+      <div id="logodiv" class="menu"><img id="logoimg" src="images/leaf.png" alt=""></div>
+    </a>
+    <a href="wifi.html" id="wifi" class="el">
+      <div class="menu">Wi-Fi</div>
+    </a>
+    <a href="protect.html" class="el">
+      <div class="menu">Защита</div>
+    </a>
+    <a href="petition.html" id="petition" class="el">
+      <div class="menu">Петиция</div>
+    </a>
+  </header>
+  <main>
+    <div id="confir">
+      <div id="contex"><h1>Защита природы</h1>
+      <br>
+      Очень важный аспект в здоровье граждан города - чистота этого города. Ведь с каждой новой бутылкой, выброшенной не в мусорку страдает наш организм. Про вредные выбросы от пластика вы можете почитать, кликнув <b><a  id="vibros" href="#">сюда</a></b>.
+        <br>
+        И запомните одну очень важную мысль 
+        <br>
+        <h2>'' Чисто не там, где убирают, а там, где не мусорят ,,</h2>
+    </div>
+    <div id="chisimg">
+      &nbsp;
+    </div>
+    </div>
+    <div onclick="alert()" id="mustex">
+      <b>А теперь давайте немного статистики</b>
+      <div id="infograf">&nbsp;</div>
+      А ведь сколько возможностей бы открылись нам, если бы каждый из нас просто производил меньше мусора.
+    </div>
+    <div id="itog">
+      <h1>Если подвести итог всему вышесказанному, то самое главное - не мусорить, и постараться меньше производить мусор.</h1>
+    </div>
+    <!-- <div id="backtext">
+      <div id="backchild">&nbsp;</div>
+      <div style="color: white;">Я енто сделол, правда не знаю зачем, поэтому пусть лежит в комментариях</div>
+    </div> !-->
+  </main>
+  <footer>
+    <div id="footertext">2020 Саламов Имран (C)</div>
+  </footer>
+</body>
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script>
+  function alert() {
+    Swal.fire('Важно не только следить за собой, но и постараться не допустить распространения мусора руками ваших друзей, знакомых.')
+  }
+</script>
+</html>
