@@ -86,6 +86,9 @@ footer{
     background-image: url('images/grass\ texture3.png');
     height: 70px;
     min-height: 70px;
+    position: fixed;
+bottom: 0;
+width: 100%;
 }
 #footertext {
     margin-top: 45px;
@@ -212,6 +215,7 @@ main{
     font-family: 'Roboto Slab', serif;
     font-size: 5vh;
     user-select: none;
+    margin-bottom: 10vh;
 }
 .list {
     text-align: start;
@@ -221,6 +225,7 @@ main{
     background-color: white;
     cursor: pointer;
     transition: 1s;
+    list-style-type: none;
 }
 .listel:hover {
     background-color: rgb(185, 185, 185);
@@ -407,7 +412,6 @@ main{
 }
 #mustex:hover {
     background-image: url("images/1.jpg");
-    animation: psycho 1s infinite;
     background-size: cover;
     background-blend-mode: overlay;
     background-color: rgba(0,0,0,0.7);
@@ -432,6 +436,69 @@ main{
     background-color: rgb(245, 245, 245, 0.7);
     padding-left: 5vw;
     padding-right: 5vw;
+}
+#mirpr {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 5%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5vh;
+    user-select: none;
+}
+#uzn {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 4vh;
+}
+#russian {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 5%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 4vh;
+    user-select: none;
+}
+.rustext {
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+.rusli {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    font-size: 3vh;
+    list-style-type: none;
+    text-align: justify;
+    margin-left: 7vh;
+    margin-right: 7vh;
+}
+#rusimg {
+    border-radius: 50px;
+    text-align: center;
+    background-image: url("images/EBcLEpiX4AAFIBt.jpg_large");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    min-height: 70vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 @keyframes psycho {
     0% {filter: hue-rotate(0deg);}
